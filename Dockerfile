@@ -1,5 +1,5 @@
 # Use the latest Ubuntu base image
-FROM php:7.1-apache
+FROM php:7.2-apache
 MAINTAINER Kazuhei Arai <kazuhei0108@gmail.com>
 
 # Silence debconf's endless prattle
