@@ -7,7 +7,8 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # install php extensions
 RUN apt-get update && \
-    docker-php-ext-install pdo_mysql mysqli mbstring
+    apt-get install -y libpng-dev && \
+    docker-php-ext-install pdo_mysql mysqli mbstring gd
 
 # set up Apache environment variables
 ENV APACHE_RUN_USER=www-data \
